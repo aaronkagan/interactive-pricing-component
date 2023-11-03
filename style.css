@@ -13,11 +13,113 @@ body {
   font-size: 1.5rem;
 }
 
-.attribution {
+.hidden-desktop {
+  display: none;
+}
+
+.title {
+  color: #293356;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  color: #848ead;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2.3rem;
+}
+
+.pageviews {
+  color: #848ead;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.714px;
+}
+
+.price {
+  color: #293356;
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.slash-month {
+  color: #848ead;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.card {
+  border-radius: 0.8rem;
+}
+
+.card-main {
+  border-bottom: 1px solid #ecf0fb;
+}
+
+.monthly,
+.yearly {
+  color: #848ead;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.toggle-outer {
+  width: 4.2rem;
+  height: 2.2rem;
+  background-color: #cfd8ef;
+  border-radius: 9999px;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+}
+
+.toggle-inner {
+  background-color: #fff;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+}
+
+.left-4px {
+  left: 4px;
+}
+
+.right-4px {
+  right: 4px;
+}
+
+.discount {
+  background-color: #feede8;
+  color: #ff8d68;
+  border-radius: 9999px;
+  padding: 0.2rem 0.7rem;
+}
+
+.feature-text {
+  color: #848ead;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cta {
+  background-color: #293356;
+  color: #becdff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 1.2rem 4.6rem;
+  text-decoration: none;
+  border-radius: 9999px;
+}
+
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */

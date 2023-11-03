@@ -16,23 +16,31 @@
   <header class="header">
     <div class="header-text">
       <h1 class="title">Simple, traffic-based pricing</h1>
-      <h2 class="subtitle">Sign-up for our 30-day trial. No credit card required.</h2>
+      <div class="subtitles">
+        <h2 class="subtitle">Sign-up for our 30-day trial.</h2>
+        <h2 class="subtitle">No credit card required.</h2>
+      </div>
     </div>
   </header>
 
   <main class="main">
     <article class="card">
       <header class="card-header">
-        <p><span class="num-pageviews">0</span>Pageviews</p>
-        <p class="price">$<span class="price">0</span>/month</p>
+        <p class="pageviews"><span class="num-pageviews">100k</span>Pageviews</p>
+        <p class="price">$<span class="dynamic-price">16</span>.00 <span class="slash-month">/month</span></p>
       </header>
-      <div class="slider"></div>
-      <div class="toggle-container">
-        <p class="monthly">Monthly Billing</p>
-        <div class="toggle"></div>
-        <p class="yearly">Yearly Billing <span class="discount-mobile hidden-desktop">25% discount</span><span
-            class="discount-desktop hidden-mobile">-25%</span></p>
-      </div>
+      <main class="card-main">
+        <div class="slider"></div>
+        <div class="toggle-row">
+          <p class="monthly">Monthly Billing</p>
+          <button class="toggle-outer">
+            <div class="toggle-inner left-4px"></div>
+          </button>
+          <p class="yearly">Yearly Billing <span class="discount discount-mobile hidden-desktop">25%
+              discount</span><span class="discount discount-desktop hidden-mobile">-25%</span></p>
+        </div>
+      </main>
+
       <footer class="card-footer">
         <div class="col-left">
           <div class="feature-container">
@@ -60,6 +68,8 @@
       Coded by <a href="https://www.aaronkagan.dev">Aaron Kagan</a>
     </div>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
