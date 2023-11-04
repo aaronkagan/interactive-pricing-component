@@ -109,6 +109,10 @@ body {
   top: 4px;
 }
 
+.toggle-outer:hover {
+  background-color: #7aeadf;
+}
+
 .toggle-monthly {
   left: 4px;
 }
@@ -227,6 +231,16 @@ input[type='range']::-moz-range-thumb {
   background-position: center;
 }
 
+input[type='range']::-webkit-slider-thumb:active {
+  background-color: #24aea1;
+}
+
+input[type='range']::-moz-range-thumb:active {
+  background-color: #24aea1;
+}
+
+/* Slider Focus styles */
+
 /* Removes default focus */
 input[type='range']:focus {
   outline: none;
@@ -234,12 +248,10 @@ input[type='range']:focus {
 
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 input[type='range']:focus::-webkit-slider-thumb {
-  border: 1px solid #053a5f;
-  outline: 3px solid #053a5f;
+  outline: 3px solid #24aea1;
 }
 
 /******** Firefox ********/
 input[type='range']:focus::-moz-range-thumb {
-  border: 1px solid #053a5f;
-  outline: 3px solid #053a5f;
+  outline: 3px solid #24aea1;
 }
