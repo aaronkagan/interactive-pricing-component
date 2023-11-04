@@ -256,7 +256,15 @@ body {
   outline: 3px solid #24aea1;
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1400px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .hidden-desktop {
+    display: unset;
+  }
+
   body {
     background-position-y: -25rem;
     background-size: cover;
@@ -302,6 +310,11 @@ body {
 
   .slash-month {
     margin-left: 0.5rem;
+  }
+
+  .toggle-row {
+    justify-content: center;
+    margin-left: 5.5em;
   }
 
   .lower-card {
