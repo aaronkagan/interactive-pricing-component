@@ -19,22 +19,18 @@ const setPrice = (range) => {
     case '2':
       isMonthly ? (dynamicPrice.innerText = '12') : applyDiscount(dynamicPrice);
       numPageviews.innerText = '50k';
-
       break;
     case '3':
       isMonthly ? (dynamicPrice.innerText = '16') : applyDiscount(dynamicPrice);
       numPageviews.innerText = '100k';
-
       break;
     case '4':
       isMonthly ? (dynamicPrice.innerText = '24') : applyDiscount(dynamicPrice);
       numPageviews.innerText = '500k';
-
       break;
     case '5':
       isMonthly ? (dynamicPrice.innerText = '36') : applyDiscount(dynamicPrice);
       numPageviews.innerText = '1m';
-
       break;
     default:
       break;
