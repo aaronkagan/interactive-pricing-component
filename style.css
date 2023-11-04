@@ -180,7 +180,7 @@ body {
 
 /*** Slider Styles ***/
 
-input[type='range'] {
+.slider {
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -193,16 +193,16 @@ input[type='range'] {
   border-radius: 8px;
   outline: none;
 }
-input[type='range']::-webkit-slider-runnable-track {
+.slider::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 8px;
 }
-input[type='range']::-moz-track {
+.slider::-moz-track {
   -moz-appearance: none;
   height: 8px;
 }
 
-input[type='range']::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   height: 40px;
@@ -216,7 +216,7 @@ input[type='range']::-webkit-slider-thumb {
   background-repeat: no-repeat;
   background-position: center;
 }
-input[type='range']::-moz-range-thumb {
+.slider::-moz-range-thumb {
   -webkit-appearance: none;
   appearance: none;
   height: 40px;
@@ -231,27 +231,88 @@ input[type='range']::-moz-range-thumb {
   background-position: center;
 }
 
-input[type='range']::-webkit-slider-thumb:active {
+.slider::-webkit-slider-thumb:active {
   background-color: #24aea1;
 }
 
-input[type='range']::-moz-range-thumb:active {
+.slider::-moz-range-thumb:active {
   background-color: #24aea1;
 }
 
 /* Slider Focus styles */
 
 /* Removes default focus */
-input[type='range']:focus {
+.slider:focus {
   outline: none;
 }
 
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
-input[type='range']:focus::-webkit-slider-thumb {
+.slider:focus::-webkit-slider-thumb {
   outline: 3px solid #24aea1;
 }
 
 /******** Firefox ********/
-input[type='range']:focus::-moz-range-thumb {
+.slider:focus::-moz-range-thumb {
   outline: 3px solid #24aea1;
+}
+
+@media all and (min-width: 1000px) {
+  body {
+    background-position-y: -25rem;
+    background-size: cover;
+  }
+
+  .subtitles {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
+
+  .card {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .card-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-header p {
+    margin: 0;
+  }
+
+  .slider {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+  }
+
+  .slash-month {
+    margin-left: 0.5rem;
+  }
+
+  .lower-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3.2rem;
+  }
 }
