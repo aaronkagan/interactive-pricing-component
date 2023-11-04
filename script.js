@@ -4,7 +4,7 @@ const slider = document.querySelector('.slider');
 const toggleButton = document.querySelector('.toggle-outer');
 const toggleButtonInner = document.querySelector('.toggle-inner');
 let isMonthly = true;
-let range = '3';
+let range = '50';
 
 const setPrice = (range) => {
   switch (range) {
