@@ -173,3 +173,73 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+/*** Slider Styles ***/
+
+input[type='range'] {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 90%;
+  margin: 4rem auto;
+  height: 8px;
+  background-color: #d5d5d5;
+  border-radius: 8px;
+  outline: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 8px;
+}
+input[type='range']::-moz-track {
+  -moz-appearance: none;
+  height: 8px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  background-color: #0ad8c4;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -20px;
+  border: none;
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  background-color: #0ad8c4;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -20px;
+  border: none;
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Removes default focus */
+input[type='range']:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']:focus::-webkit-slider-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+}
+
+/******** Firefox ********/
+input[type='range']:focus::-moz-range-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+}

@@ -8,31 +8,31 @@ let range = '3';
 
 const setPrice = (range) => {
   switch (range) {
-    case '1':
+    case '0':
       isMonthly
         ? (dynamicPrice.innerText = '8')
         : (dynamicPrice.innerText = '6');
       numPageviews.innerText = '10k';
       break;
-    case '2':
+    case '25':
       isMonthly
         ? (dynamicPrice.innerText = '12')
         : (dynamicPrice.innerText = '8');
       numPageviews.innerText = '50k';
       break;
-    case '3':
+    case '50':
       isMonthly
         ? (dynamicPrice.innerText = '16')
         : (dynamicPrice.innerText = '12');
       numPageviews.innerText = '100k';
       break;
-    case '4':
+    case '75':
       isMonthly
         ? (dynamicPrice.innerText = '24')
         : (dynamicPrice.innerText = '18');
       numPageviews.innerText = '500k';
       break;
-    case '5':
+    case '100':
       isMonthly
         ? (dynamicPrice.innerText = '36')
         : (dynamicPrice.innerText = '27');
@@ -43,6 +43,13 @@ const setPrice = (range) => {
   }
 };
 
+const styleSlider = () => {
+  valPercent = (slider.value / slider.max) * 100;
+  slider.style.background = `linear-gradient(to right, #A4F3EB ${valPercent}%, #d5d5d5 ${valPercent}%)`;
+};
+
+styleSlider();
+
 toggleButton.addEventListener('click', () => {
   toggleButtonInner.classList.toggle('toggle-monthly');
   toggleButtonInner.classList.toggle('toggle-yearly');
@@ -50,7 +57,8 @@ toggleButton.addEventListener('click', () => {
   setPrice(range);
 });
 
-slider.addEventListener('change', (e) => {
+slider.addEventListener('input', (e) => {
   range = e.target.value;
+  styleSlider();
   setPrice(range);
 });

@@ -1,0 +1,69 @@
+/* Reset the styles */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 90%;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']::-webkit-slider-runnable-track {
+  background: #ecf0fb;
+  height: 0.8rem;
+  border-radius: 9999px;
+}
+
+/******** Firefox ********/
+input[type='range']::-moz-range-track {
+  background: #a4f3eb;
+  background: #ecf0fb;
+
+  height: 0.8rem;
+  border-radius: 9999px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -1.7rem; /* Centers thumb on the track */
+  background-color: #40d8c4;
+  height: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/***** Firefox *****/
+input[type='range']::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  background-color: #40d8c4;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/***** Focus Styles *****/
+/* Removes default focus */
+input[type='range']:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']:focus::-webkit-slider-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+}
+
+/******** Firefox ********/
+input[type='range']:focus::-moz-range-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+}
