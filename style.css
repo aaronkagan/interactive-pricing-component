@@ -13,7 +13,7 @@ body {
   font-size: 1.5rem;
   background-image: url(./images/bg-pattern.svg);
   background-repeat: no-repeat;
-  background-position-y: -85%;
+  background-position-y: -15%;
 }
 
 .hidden-desktop {
@@ -25,8 +25,14 @@ body {
   flex-direction: column;
   text-align: center;
   max-width: 90%;
-  margin: 0 auto;
+  margin: 5rem auto;
   padding: 4.5rem 0;
+}
+
+.wrapper {
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .title {
@@ -43,7 +49,7 @@ body {
 }
 
 .card {
-  margin-top: 3.2rem;
+  margin-top: 6rem;
   padding-top: 3.4rem;
   padding-bottom: 3.4rem;
   border-radius: 0.8rem;
@@ -256,7 +262,7 @@ body {
   outline: 3px solid #24aea1;
 }
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1250px) {
   .hidden-mobile {
     display: none;
   }
@@ -266,7 +272,7 @@ body {
   }
 
   body {
-    background-position-y: -25rem;
+    background-position-y: -35rem;
     background-size: cover;
   }
 
