@@ -48,6 +48,7 @@ Users should be able to:
 
 - The main thing this project taught me was how to customize the slider (HTML Range Input). See the link in 'Useful Resource' section below for the full tutorial (I didn't use the whole thing, just the parts I needed)
 - I also learned about the difference between the `input` event handler vs the `change` event handler. For the slider the `input` event handler was suited better since it fires when the slider is moved without the user having to release the click
+- Vendor prefixes for styling all parts of the slider
 
 ### Useful resources
 
