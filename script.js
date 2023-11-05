@@ -55,10 +55,18 @@ toggleButton.addEventListener('click', () => {
   toggleButtonInner.classList.toggle('toggle-yearly');
   isMonthly = !isMonthly;
   setPrice(range);
+  toggleButton.setAttribute(
+    'aria-label',
+    `${isMonthly ? 'monthly pricing' : 'yearly pricing'}`
+  );
 });
 
 slider.addEventListener('input', (e) => {
   range = e.target.value;
   styleSlider();
   setPrice(range);
+  slider.setAttribute(
+    'aria-valuetext',
+    `${numPageviews.innerText} page views. ${dynamicPrice.innerText}$ per month`
+  );
 });
