@@ -1,4 +1,4 @@
-# Interactive pricing component solution
+# Interactive pricing component
 
 ## Table of contents
 
