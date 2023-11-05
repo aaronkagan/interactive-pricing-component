@@ -20,6 +20,14 @@ body {
   display: none;
 }
 
+.screen-reader-only {
+  position: absolute;
+  left: -10000px; /* Move off the screen */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;

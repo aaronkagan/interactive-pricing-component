@@ -33,18 +33,19 @@
         <div class="card-wrapper">
           <header class="card-header">
             <p class="pageviews"><span class="num-pageviews">100k</span> Pageviews</p>
-
-            <input class="slider" type="range" min="0" max="100" value="50" step="25">
+            <label for="slider" class="screen-reader-only">Pricing slider</label>
+            <input id="slider" class="slider" type="range" min="0" max="100" value="50" step="25">
 
             <p class="price">$<span class="dynamic-price">16</span>.00 <span class="slash-month">/month</span></p>
           </header>
-          <main class="card-main">
+          <section class="card-main">
             <section class="card-main-top">
               <div class="toggle-row">
                 <p class="monthly">Monthly Billing</p>
-                <button class="toggle-outer">
+                <label for="toggle" class="screen-reader-only">Toggle monthly yearly</label>
+                <div id="toggle" role="button" class="toggle-outer">
                   <div class="toggle-inner toggle-monthly"></div>
-                </button>
+                </div>
                 <p class="yearly">Yearly Billing <span class="discount discount-mobile hidden-desktop">25%
                     discount</span><span class="discount discount-desktop hidden-mobile">-25%</span></p>
               </div>
@@ -69,7 +70,7 @@
                 <a class="cta" href="#">Start my trial</a>
               </div>
             </section>
-          </main>
+          </section>
         </div>
       </article>
 
